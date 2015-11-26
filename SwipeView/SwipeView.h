@@ -59,6 +59,8 @@ typedef NS_ENUM(NSUInteger, SwipeViewAlignment)
 
 @interface SwipeView : UIView
 
+@property (nonatomic, readonly, strong) UIScrollView *scrollView;
+
 @property (nonatomic, weak_delegate) IBOutlet id<SwipeViewDataSource> dataSource;
 @property (nonatomic, weak_delegate) IBOutlet id<SwipeViewDelegate> delegate;
 @property (nonatomic, readonly) NSInteger numberOfItems;
